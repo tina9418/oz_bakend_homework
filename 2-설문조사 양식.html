@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="X-UA-compatible" content="IE=edge">
+    <title>설문조사 양식</title>
+</head>
+<body>
+    <header>
+        <h1>음식 선호도 조사</h1>
+        <p>설문에 참여해 주셔서 감사합니다.</p>
+    </header>
+    <hr>
+    <main>
+        <form>
+            <fieldset>
+                <legend>개인정보</legend>
+                <label for="name">이름</label>
+                <input type="text"
+                name="name"
+                id="name" placeholder="이름 입력해주세요">
+                <br>
+                <label for="email">메일</label>
+                <input type="email"
+                name="email"
+                id="email" placeholder="메일 입력해주세요">
+            </fieldset>
+            <fieldset>
+                <legend>설문 조사</legend>
+                
+                <p>본인 나이를 선택해주세요.</p>
+                <input type="radio" id="teen" name="age">
+                <label for="teen">10대</label>
+                <input type="radio" id="twenty" name="age">
+                <label for="twenty">20대</label>
+                <input type="radio" id="thirty" name="age">
+                <label for="thirty">30대</label>
+                <input type="radio" id="other" name="age">
+                <label for="other">그 외</label>
+
+                <p>몇 가구인지 선택해주세요.</p>
+                <input type="radio" id="one" name="the number of people">
+                <label for="one">1인 가구</label>
+                <input type="radio" id="two" name="the number of people">
+                <label for="two">2인 가구</label>
+                <input type="radio" id="three" name="the number of people">
+                <label for="three">3인 가구</label>
+                <input type="radio" id="four" name="the number of people">
+                <label for="four">4인 가구</label>
+                <input type="radio" id="other" name="the number of people">
+                <label for="other">그 외</label>
+
+                <p>선호하는 음식종류들을 골라주세요.(중복가능)</p>
+                <input type="checkbox" id="korean cuisine" name="food">
+                <label for="korean food">한식</label>
+                <input type="checkbox" id="japanese food" name="food">
+                <label for="japanese food">일식</label>
+                <input type="checkbox" id="western food" name="food">
+                <label for="western food">양식</label>
+                <input type="checkbox" id="other" name="food">
+                <label for="other">그 외</label>
+
+                <p>배달을 얼마나 자주 시켜드시나요?</p>
+                <input type="checkbox" id="one" name="number of time">
+                <label for="one">1회</label>
+                <input type="checkbox" id="two" name="number of time">
+                <label for="two">2회</label>
+                <input type="checkbox" id="three" name="number of time">
+                <label for="three">3회</label>
+                <input type="checkbox" id="four" name="number of time">
+                <label for="four">4회</label>
+                <textarea rows="1" cols="10" name="comment" placeholder="기타 몇번이상"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>배달은 왜 자주 시켜먹는지에 대해 설명해주세요.</legend>
+                <textarea rows="3" cols="30"></textarea>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </main>
+    <hr>
+    <footer>
+        <p>설문에 참여해주셔서 감사합니다.</p>
+    </footer>
+</body>
+</html>
